@@ -25,7 +25,9 @@ A collection of one-line scripts in various languages that do various things. Mo
 ### find AD users who might be...interesting (from killswitch-GUI/PenTesting-Scripts)
 Search an account's description
 
-`powershell Get-NetUser -Filter "(description=*keyword*)" | Select-Object -Prop samaccountname.description,title`
+```
+powershell Get-NetUser -Filter "(description=*keyword*)" | Select-Object -Prop samaccountname.description,title
+```
 
 Search by title (Administrator? Director? CEO? Yes, please.)
 
