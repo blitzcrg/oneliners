@@ -2,7 +2,7 @@
 
 A collection of one-line scripts in various languages that do various things. Mostly for my own reference.
 
-### Ubuntu banner grab/remote port test
+### Ubuntu/RHEL banner grab/remote port test
 ```
 cat < /dev/tcp/<destip>/<port>
 ```
