@@ -21,14 +21,3 @@ A collection of one-line scripts in various languages that do various things. Mo
 
 ### quick DNS reverse lookup
 `[System.Net.Dns]::GetHostEntry("<hostname>").IPAddressToString`
-
-### find AD users who might be...interesting (from killswitch-GUI/PenTesting-Scripts)
-Search an account's description
-
-```
-powershell Get-NetUser -Filter "(description=*keyword*)" | Select-Object -Prop samaccountname.description,title
-```
-
-Search by title (Administrator? Director? CEO? Yes, please.)
-
-`powershell Get-NetUser -Filter "(title=*keyword*)" | Select-Object -Prop samaccountname.description,title`
